@@ -44,6 +44,7 @@ public class Ping {
             System.setProperty("galaxy.port", Integer.toString(7050 + nodeId));
             System.setProperty("galaxy.slave_port", Integer.toString(8050 + nodeId));
 
+            System.setProperty("log4j.configurationFile", "log4j.xml");
             System.setProperty("galaxy.multicast.address", "225.0.0.1");
             System.setProperty("galaxy.multicast.port", "7050");
             System.setProperty("galaxy.zkServers", "localhost:2181");
