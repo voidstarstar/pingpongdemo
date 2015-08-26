@@ -43,6 +43,13 @@ public class Pong {
             System.setProperty("galaxy.nodeId", Integer.toString(nodeId));
             System.setProperty("galaxy.port", Integer.toString(7050 + nodeId));
             System.setProperty("galaxy.slave_port", Integer.toString(8050 + nodeId));
+
+            System.setProperty("galaxy.multicast.address", "225.0.0.1");
+            System.setProperty("galaxy.multicast.port", "7050");
+            System.setProperty("galaxy.zkServers", "localhost:2181");
+            System.setProperty("co.paralleluniverse.galaxy.configFile", "config/peer.xml");
+            System.setProperty("co.paralleluniverse.galaxy.autoGoOnline", "true");
+
             ActorRegistry.hasGlobalRegistry();
             ActorRef<Message> pong = new BasicActor<Message, Integer>() {
                 @Override
