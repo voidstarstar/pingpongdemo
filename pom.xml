@@ -23,5 +23,10 @@
       <version>0.7.2</version>
       <classifier>jdk8</classifier>
     </dependency>
+    <dependency>
+      <groupId>co.paralleluniverse</groupId>
+      <artifactId>quasar-actors</artifactId>
+      <version>0.7.2</version>
+    </dependency>
   </dependencies>
 </project>
