@@ -49,6 +49,7 @@ public class Pong {
             System.setProperty("galaxy.zkServers", "localhost:2181");
             System.setProperty("co.paralleluniverse.galaxy.configFile", "config/peer.xml");
             System.setProperty("co.paralleluniverse.galaxy.autoGoOnline", "true");
+            System.setProperty("java.net.preferIPv4Stack" , "true");
 
             ActorRegistry.hasGlobalRegistry();
             ActorRef<Message> pong = new BasicActor<Message, Integer>() {
